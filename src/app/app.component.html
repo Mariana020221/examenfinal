@@ -1,9 +1,18 @@
-<div>
-  <h1>Menú</h1>
-  <button (click)="redirectToNassa()">Nassa</button>
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 float-start">
+      <button class="btn btn-secondary btn-lg" (click)="redirectToNassa()">Nassa</button>
+    </div>
+    <div class="col-md-6 float-end">
+      <button class="btn btn-secondary btn-lg" (click)="redirectToSimpson()">Simpson</button>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <router-outlet></router-outlet>
+  </div>
 </div>
-
-
-<ul id="navegador">
-  <li><a [routerLink]="['/nassa']" routerLinkActive="active">nassa</a></li>
-</ul>

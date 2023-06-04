@@ -15,4 +15,8 @@ export class AppComponent {
   redirectToNassa(): void {
     this.router.navigate(['/nassa']);
   }
+
+  redirectToSimpson(): void {
+    this.router.navigate(['/simpson']);
+  }
 }
